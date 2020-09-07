@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+<style>
+.flex-container {
+  display: flex;
+  background-color: #add8e6;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
 </head>
+<div class="flex-container">
 <body style="background-color:#add8e6;">
-    <h1>Vul jouw gegevens in!</h1>
+  <div> 
+  <h1>Vul jouw gegevens in!</h1>
 
     <ul>
         <li><a href=index.html>Startpagina</a></li>
         <li><a href=overmij.html>Over mij</a></li>
         <li><a href=hobby.html>Hobby</a></li>
       </ul>
-
-    <form action="/action_page.php">
+  </div> 
+  <div>
+    <form action="Dankjewel voor het invullen">
         <label for="fname">Naam:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
+        <input type="text" id="fname" name="fname" value=""><br>
         <label for="lname">Email-address:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <p>
+          Waar wil je een vraag over stellen?
+          <select name="formGender">
+            <option value="">Selecteer...</option>
+            <option value="H">Hobby</option>
+            <option value="W">werk</option>
+            <option value="I">info</option>
+            <option value="O">overig</option>
+          </select>
+        </p>
+        <label for="textbox">Vul hier je vraag in:</label><br>
+        <input type="text" id="textbox" name="textbox" value="" width="70" height="40"><br><br>
         <input type="submit" value="Submit">
       </form>
+    </div>
+  </div>
 </body>
 </html>

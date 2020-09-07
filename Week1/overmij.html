@@ -20,12 +20,29 @@
     padding: 20px;
     font-size: 30px;
   }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2af;
+}
+
 </style>
   </head>
   <body style="background-color:#add8e6">
   <div class="flex-container">
     <div>  
-      <h1>Welkom op de pagina over mij!</h1>
+      <h1>Dit is mijn portfolio</h1>
         <nav>
           <ul>
             <li><a href=index.html>Startpagina</a></li>
@@ -36,22 +53,37 @@
     </div>
     <div>
       <h1>Over mij: </h1>
-      <p>
-          Mijn naam is Tom Buwalda, 19 jaar en woonachtig in Franeker, Friesland.<br/>
-          Ik heb de vooropleiding MBO Niveau 4 ict en mediabeheer gevolgt.<br/>
-          Ik ben al jaren bezig in met IT, van thuisnetwerken tot het helpen van anderen met hun eigen netwerk<br/>
-          Dit jaar start mijn studie aan de NHL in Leeuwarden.<br/>
-      </p>
+      
+          <p>Mijn naam is Tom Buwalda, 19 jaar en woonachtig in Franeker, Friesland.</p>
+          <p>Ik heb de vooropleiding MBO Niveau 4 ict en mediabeheer gevolgt.</p>
+          <p>Ik ben al jaren bezig in met IT, van thuisnetwerken tot het helpen van anderen met hun eigen netwerk<br/>
+             Dit jaar start mijn studie aan de NHL in Leeuwarden.</p>
+      
     </div>
-    <div class="progtaal">
+    <div class="table">
       <h1>Welke programmeertaal ken ik?</h1>
-        <TABLE BORDER="1">
-          <TR> <TH>Programmeertaal</TH><TH>Logo</TH>
-          <TR> <TD>C#</TD> <TD><img src="csharp.png" width="25" height="25" alt=""></TD>
-          <TR> <TD>Python</TD> <TD><img src="python.png" width="25" height="25" alt=""></TD>
-          <TR> <TD>HTML</TD> <TD><img src="html.png" width="25" height="25" alt=""></TD>
-          <TR> <TD>CSS</TD> <TD><img src="css.png" width="25" height="30" alt=""></TD>
-          </TABLE>
+        <table>
+          <tr>
+            <th>Programmeertaal</th>
+            <th>Logo</th>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td><img src="pictures/csharp.png" width="25" height="25" alt=""></td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td><img src="pictures/css.png" width="25" height="25" alt=""></td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td><img src="pictures/html.png" width="25" height="25" alt=""></td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td><img src="pictures/python.png" width="25" height="25" alt=""></td>
+          </tr>
+        </table>
     </div>
 </div>
 </body>
