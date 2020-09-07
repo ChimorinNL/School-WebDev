@@ -9,69 +9,51 @@
     <title>Over mij</title>
     <script src="jquery-3.5.1.js"></script>
 <style>
+  .flex-container {
+    display: flex;
+    background-color: #add8e6;
+  }
 
-.begintekst {
-        font-size: 20px;
-        color: black;
-        max-width: 275px;
-        float: center;
-        position: relative;
-      }
-
-.overmij {
-      font-size: 20px;
-      color: black;
-      max-width: 275px;
-      margin: auto;
-      position: relative;
-      }
-
-.progtaal{
-      font-size: 20px;
-      color: black;
-      max-width: 275px;
-      float: right;
-      position: relative; 
-}
-
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
 </style>
-</head>
-<body style="background-color:#add8e6">
-
-  <div class="begintekst">  
-    <h1>Welkom op de pagina over mij!</h1>
-
-      <nav>
-        <ul>
-          <li><a href=index.html>Startpagina</a></li>
-          <li><a href=hobby.html>Hobby</a></li>
-          <li><a href=contact.html>Contact</a></li>
-        </ul>
-      </nav>
-  </div>
-
-  <div class="overmij">
-    <h2>Over mij: </h2>
-    <p>
-        Mijn naam is Tom Buwalda, 19 jaar en woonachtig in Franeker, Friesland.<br/>
-        Ik heb de vooropleiding MBO Niveau 4 ict en mediabeheer gevolgt.<br/>
-        Ik ben al jaren bezig in met IT, van thuisnetwerken tot het helpen van anderen met hun eigen netwerk<br/>
-        Dit jaar start mijn studie aan de NHL in Leeuwarden.<br/>
-    </p>
-  </div>
-
-  <div class="progtaal">
-
-    <h2>Welke programmeertaal ken ik?</h2>
-      <TABLE BORDER="1">
-        <TR> <TH>Programmeertaal</TH><TH>Logo</TH>
-        <TR> <TD>C#</TD> <TD><img src="csharp.png" width="25" height="25" alt=""></TD>
-        <TR> <TD>Python</TD> <TD><img src="python.png" width="25" height="25" alt=""></TD>
-        <TR> <TD>HTML</TD> <TD><img src="html.png" width="25" height="25" alt=""></TD>
-        <TR> <TD>CSS</TD> <TD><img src="css.png" width="25" height="30" alt=""></TD>
-        </TABLE>
-
-  </div>
+  </head>
+  <body style="background-color:#add8e6">
+  <div class="flex-container">
+    <div>  
+      <h1>Welkom op de pagina over mij!</h1>
+        <nav>
+          <ul>
+            <li><a href=index.html>Startpagina</a></li>
+            <li><a href=hobby.html>Hobby</a></li>
+            <li><a href=contact.html>Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div>
+      <h1>Over mij: </h1>
+      <p>
+          Mijn naam is Tom Buwalda, 19 jaar en woonachtig in Franeker, Friesland.<br/>
+          Ik heb de vooropleiding MBO Niveau 4 ict en mediabeheer gevolgt.<br/>
+          Ik ben al jaren bezig in met IT, van thuisnetwerken tot het helpen van anderen met hun eigen netwerk<br/>
+          Dit jaar start mijn studie aan de NHL in Leeuwarden.<br/>
+      </p>
+    </div>
+    <div class="progtaal">
+      <h1>Welke programmeertaal ken ik?</h1>
+        <TABLE BORDER="1">
+          <TR> <TH>Programmeertaal</TH><TH>Logo</TH>
+          <TR> <TD>C#</TD> <TD><img src="csharp.png" width="25" height="25" alt=""></TD>
+          <TR> <TD>Python</TD> <TD><img src="python.png" width="25" height="25" alt=""></TD>
+          <TR> <TD>HTML</TD> <TD><img src="html.png" width="25" height="25" alt=""></TD>
+          <TR> <TD>CSS</TD> <TD><img src="css.png" width="25" height="30" alt=""></TD>
+          </TABLE>
+    </div>
+</div>
 </body>
 
 </html>

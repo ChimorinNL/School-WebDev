@@ -7,21 +7,17 @@
 
   <style>
 
-.hobby1 {
-        font-size: 20px;
-        color: black;
-        max-width: 275px;
-        float: left;
-        position: relative;
-      }
+.flex-container {
+  display: flex;
+  background-color: #add8e6;
+}
 
-.hobby2 {
-      font-size: 20px;
-      color: black;
-      max-width: 275px;
-      float: right;
-      position: relative;
-      }
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 
   </style>
 </head>
@@ -34,22 +30,22 @@
       <li><a href=contact.html>Contact</a></li>
     </ul>
 
+  <div class="flex-container">
+    <div>Uitgaan en afspreken met vrienden
+        <p>
+          Ik spreek graag af met mijn vrienden.<br/>
+          Of dit nu online of offline is, het is altijd gezellig.<br/>
+          Van feestjes met elkaar, tot weekendjes weg, er is altijd wat te beleven.<br/>
+        </p>
+    </div>
 
-    <div class="hobby1">
-      <h1>Uitgaan en afspreken met vrienden</h1>
+    <div>Fitness
       <p>
-        In mijn vrije tijd vind ik het leuk om met mijn vrienden af te spreken<br/>
-        Of dit nu online of offline is, het is altijd gezellig<br/>
-        Van feestjes tot weekendjes weg, wij doen veel binnen onze vriendengroep<br/>
-        
-
+        In de avonduren probeer ik zoveel mogelijk te fitnessen.<br/>
+        Het is lekker om even je hoofd leeg te maken na een drukke dag.<br/>
       </p>
     </div>
-
-    <div class="hobby2">
-      <h1>Fitness</h1>
-
-    </div>
+  </div>
 
 </body>
 </html>
