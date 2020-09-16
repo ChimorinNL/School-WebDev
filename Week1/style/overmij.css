@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2af;
+  }
+  tr:hover {
+    background-color:rgb(162, 162, 170);
+  }
+
+.flex-container {
+  display: flex;
+  background-color: #add5e2;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
