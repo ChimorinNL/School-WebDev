@@ -21,6 +21,10 @@
     ></script>
   </head>
   <body>
+    <div class="header">
+      <h1>A Special Day</h1>
+      <h2>Weddingplanners</h2>
+    </div>
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a class="active" href="wenslijstcode.html">Code</a>
@@ -43,7 +47,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Taart</td>
+          <td>Keukenmachine</td>
           <td>
             <button type="button" class="btnRemove btn btn-danger">
               Verwijder cadeau
@@ -51,7 +55,7 @@
           </td>
         </tr>
         <tr>
-          <td>Fruitmand</td>
+          <td>Fruitschaal</td>
           <td>
             <button type="button" class="btnRemove btn btn-danger">
               Verwijder cadeau
@@ -82,71 +86,9 @@
             </button>
           </td>
         </tr>
-        <tr>
-          <td>Plafondlamp</td>
-          <td>
-            <button type="button" class="btnRemove btn btn-danger">
-              Verwijder cadeau
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Deurmat</td>
-          <td>
-            <button type="button" class="btnRemove btn btn-danger">
-              Verwijder cadeau
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Schilderij</td>
-          <td>
-            <button type="button" class="btnRemove btn btn-danger">
-              Verwijder cadeau
-            </button>
-          </td>
-        </tr>
       </tbody>
     </table>
     <script src="Assets/js/bootstrap/bootstrap.min.js"></script>
-    <script>
-      function zoekButtons() {
-        $("#cadeaus button").on("click", function (evt) {
-          $(this).parent().parent().remove();
-        });
-      }
-      $(document).ready(function () {
-        zoekButtons();
-      });
-
-      $(".btnAdd").click(function (evt) {
-        var _addKado = $('input[name="addKado"]').val();
-        var _addButton =
-          '<button type="button" class="btnRemove btn btn-danger">Verwijder cadeau</button>';
-        var _tr =
-          "<tr><td>" +
-          _addKado +
-          "</td><td>" +
-          _addLink +
-          "</td><td>" +
-          _addButton +
-          "</td></tr>";
-
-        $("tbody").append(_tr);
-        zoekButtons();
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("table tbody").sortable();
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".btnRemove").click(function () {
-          $(this).parent().parent().remove();
-        });
-      });
-    </script>
+    <script src="Assets/js/lijst.js"></script>
   </body>
 </html>
