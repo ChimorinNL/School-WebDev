@@ -1,9 +1,3 @@
-function zoekButtons() {
-  $("#cadeaus button").on("click", function (evt) {
-    $(this).parent().parent().remove();
-  });
-}
-
 $(".btnAdd").click(function (evt) {
   var _addKado = $('input[name="addKado"]').val();
   var _addButton =
@@ -13,6 +7,12 @@ $(".btnAdd").click(function (evt) {
   $("tbody").append(_tr);
   zoekButtons();
 });
+
+function zoekButtons() {
+  $("#cadeaus button").on("click", function (evt) {
+    $(this).parent().parent().remove();
+  });
+}
 
 $(document).ready(function () {
   $("table tbody").sortable();
